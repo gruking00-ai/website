@@ -1,16 +1,10 @@
-{
-  "name": "opencode-web",
-  "type": "javascript",
-  "compatibility_date": "2026-09-19",
-  "main": "server/index.mjs",
-  "build": {
-    "command": "npm run build"
-  },
-  "env": {
-    "production": {
-      "vars": {
-        "OPENCODE_WEB_PORT": "8787"
-      }
-    }
-  }
-}
+name = "opencode-web"
+type = "javascript"
+compatibility_date = "2026-09-19"
+main = "server/index.mjs"
+
+[build]
+command = "npm run build"
+
+[env.production]
+vars = { OPENCODE_WEB_PORT = "8787" }
